@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "Basic Membership",
+      "price": 29.99,
+      "description": "Access to essential gym equipment and facilities.",
+      "features": ["Gym floor access", "Locker room", "Free Wi-Fi"]
+    },
+    {
+      "id": 2,
+      "name": "Premium Membership",
+      "price": 49.99,
+      "description": "Full access with group classes and premium amenities.",
+      "features": [
+        "All Basic features",
+        "Unlimited group classes",
+        "Sauna access",
+        "1 free PT session/month"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Student Plan",
+      "price": 19.99,
+      "description": "Discounted rate for students with valid ID.",
+      "features": ["Same as Basic Membership", "Student ID required"]
+    },
+    {
+      "id": 4,
+      "name": "Annual Pass",
+      "price": 299.0,
+      "description": "Commit to a year and save 15%.",
+      "features": [
+        "All Premium features",
+        "No contract fees",
+        "Free towel service"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Family Package",
+      "price": 89.99,
+      "description": "Covers 2 adults + 2 kids.",
+      "features": [
+        "Premium access for family",
+        "Kids' fitness classes",
+        "Shared PT sessions"
+      ]
+    }
+  ]
+  

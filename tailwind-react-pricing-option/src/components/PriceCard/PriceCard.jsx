@@ -2,7 +2,7 @@ import React from "react";
 
 const PriceCard = ({ prices }) => {
   const { name, price, features } = prices;
-  console.log(prices);
+
   return (
     <div className="card w-96 bg-base-100 shadow-sm">
       <div className="card-body flex flex-col h-full">
