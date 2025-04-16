@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProductForm = () => {
+const ProductForm = ({handelAddProducts}) => {
   const handelSubmit = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
@@ -12,7 +12,7 @@ const ProductForm = () => {
       price,
       quantity,
     };
-    console.log(newProduct);
+    handelAddProducts(newProduct)
   };
 
   return (
