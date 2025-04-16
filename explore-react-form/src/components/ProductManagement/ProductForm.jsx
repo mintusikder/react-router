@@ -1,18 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 
-const ProductForm = ({handelAddProducts}) => {
+const ProductForm = ({ handelAddProducts }) => {
+  const [error, setError] = useState("");
   const handelSubmit = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
     const price = e.target.price.value;
     const quantity = e.target.quantity.value;
 
+    if (name.length === 0) {
+      setError("Please Provide a product name");
+      return;
+    } else {
+      setError("");
+    }
+
     const newProduct = {
       name,
       price,
       quantity,
     };
-    handelAddProducts(newProduct)
+    handelAddProducts(newProduct);
   };
 
   return (
@@ -25,6 +33,7 @@ const ProductForm = ({handelAddProducts}) => {
         <br />
         <input type="submit" value="Submit" />
       </form>
+      <p>{error}</p>
     </div>
   );
 };
